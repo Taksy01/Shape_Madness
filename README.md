@@ -6,10 +6,6 @@ Posez le telephone à plat et orientez le pour tirer sur les ennemis ! Le jeu es
 
 ## Captures d'écran
 
-## Trailer vidéo
-
-[Lien](https://youtu.be/373ZaK_f1AQ)
-
 <p align="center">
   <img src="readmeImg/ecran2.png" width="300" />
   <img src="readmeImg/ecran1.png" width="300" />
@@ -21,6 +17,10 @@ Posez le telephone à plat et orientez le pour tirer sur les ennemis ! Le jeu es
 <p align="center">
   <img src="readmeImg/ecran5.png" width="600" />
 </p>
+
+## Trailer vidéo
+
+[Lien](https://youtu.be/373ZaK_f1AQ)
 
 ## Principe du jeu
 
