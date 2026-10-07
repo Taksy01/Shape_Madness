@@ -38,12 +38,11 @@ Posez le telephone à plat et orientez le pour tirer sur les ennemis ! Le jeu es
 - **Orientation** : paysage uniquement
 - **Langue de l'interface** : anglais
 - **Environnement de développement** : Android Studio
-Le projet n'utilise aucune bibliothèque externe : tout repose sur le SDK Android.
 
 ## Installation
 
 1. Cloner le dépôt :
-   `git clone https://github.com/Taksy01/Shape_Madness`
+   `git clone https:/github.com/Taksy01/Shape_Madness`
 2. Ouvrir le projet dans Android Studio
 3. Lancer l'application sur un téléphone (le jeu se base sur le gyroscope, il n'est pas jouable correctement sur émulateur)
 
