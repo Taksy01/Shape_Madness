@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/innerContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/background_radial_gradient"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/gameOverText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="150dp"
+            android:fontFamily="@font/alata_regular"
+            android:shadowColor="#000000"
+            android:shadowDx="8"
+            android:shadowDy="8"
+            android:shadowRadius="15"
+            android:text="@string/labelpause"
+            android:textColor="#FFFFFF"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/btnRestart"
+            android:layout_width="92dp"
+            android:layout_height="89dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gameOverText"
+            app:srcCompat="@drawable/pause_resume" />
+
+        <ImageView
+            android:id="@+id/btnMenu"
+            android:layout_width="100dp"
+            android:layout_height="86dp"
+            android:layout_marginStart="32dp"
+            app:layout_constraintBottom_toBottomOf="@+id/btnRestart"
+            app:layout_constraintStart_toEndOf="@+id/btnRestart"
+            app:layout_constraintTop_toTopOf="@+id/btnRestart"
+            app:srcCompat="@drawable/pause_menu" />
+
+        <ImageView
+            android:id="@+id/btnSettings"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintBottom_toBottomOf="@+id/btnRestart"
+            app:layout_constraintEnd_toStartOf="@+id/btnRestart"
+            app:layout_constraintTop_toTopOf="@+id/btnRestart"
+            app:srcCompat="@drawable/pause_settings" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

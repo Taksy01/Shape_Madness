@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true">
+    <View
+        android:id="@+id/settingsBackgroundDim"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_radial_gradient"
+        android:alpha="0" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/CreditsContainer"
+        android:layout_width="416dp"
+        android:layout_height="326dp"
+        android:background="@drawable/container"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/label6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alata_regular"
+            android:gravity="center"
+            android:text="@string/labelCSJ"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/Label1"
+            app:layout_constraintHorizontal_bias="0.571"
+            app:layout_constraintStart_toStartOf="@+id/Label1"
+            app:layout_constraintTop_toBottomOf="@+id/label5" />
+
+        <TextView
+            android:id="@+id/label4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alata_regular"
+            android:gravity="center"
+            android:text="@string/LabelAlexandreTricot"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/Label1"
+            app:layout_constraintHorizontal_bias="0.571"
+            app:layout_constraintStart_toStartOf="@+id/Label1"
+            app:layout_constraintTop_toBottomOf="@+id/label3" />
+
+        <TextView
+            android:id="@+id/Credits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/alata_regular"
+            android:text="@string/labelcredittitle"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Date"
+            android:layout_width="127dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="68dp"
+            android:fontFamily="@font/alata_regular"
+            android:gravity="center"
+            android:text="@string/labeldate"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.055"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/BUT"
+            android:layout_width="127dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/alata_regular"
+            android:gravity="center"
+            android:text="@string/labelBUT"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.055"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Date" />
+
+        <TextView
+            android:id="@+id/BUT2"
+            android:layout_width="127dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/alata_regular"
+            android:gravity="center"
+            android:text="@string/labelIUT"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.055"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/BUT" />
+
+        <TextView
+            android:id="@+id/Label1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="68dp"
+            android:fontFamily="@font/alata_regular"
+            android:text="@string/labeldev"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.839"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/label3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="128dp"
+            android:fontFamily="@font/alata_regular"
+            android:text="@string/LabelUIDes"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/Label1"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/Label1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/label5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="192dp"
+            android:fontFamily="@font/alata_regular"
+            android:text="@string/labelmusiccredit"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/Label1"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/Label1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alata_regular"
+            android:gravity="center"
+            android:text="@string/LabelAlexandreTricot"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/Label1"
+            app:layout_constraintHorizontal_bias="0.714"
+            app:layout_constraintStart_toStartOf="@+id/Label1"
+            app:layout_constraintTop_toBottomOf="@+id/Label1" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btnClose"
+            android:layout_width="136dp"
+            android:layout_height="37dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/button"
+            android:clickable="true"
+            android:elevation="10dp"
+            android:focusable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/closeLabel"
+                android:layout_width="81dp"
+                android:layout_height="36dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/alata_regular"
+                android:gravity="center_horizontal"
+                android:text="@string/labelClose"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                app:fontFamily="@font/alata_regular"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="109dp"
+            android:layout_height="177dp"
+            android:layout_marginStart="152dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.463"
+            app:srcCompat="@drawable/credits_image" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="66dp"
+            android:layout_height="67dp"
+            app:layout_constraintEnd_toEndOf="@+id/BUT2"
+            app:layout_constraintStart_toStartOf="@+id/BUT2"
+            app:layout_constraintTop_toBottomOf="@+id/BUT2"
+            app:srcCompat="@drawable/iut_logo" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

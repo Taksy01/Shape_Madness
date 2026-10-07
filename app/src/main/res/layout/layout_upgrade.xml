@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:elevation="110dp"
+    android:translationZ="110dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/panel_upgrade_extra"
+        android:layout_width="32dp"
+        android:layout_height="143dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/light_container"
+        app:layout_constraintBottom_toBottomOf="@+id/panel_upgrade_dmg"
+        app:layout_constraintEnd_toStartOf="@+id/panel_upgrade_dmg"
+        app:layout_constraintTop_toTopOf="@+id/panel_upgrade_dmg">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="10dp"
+            android:layout_height="17dp"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/upgrade_panel_arrow" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/panel_upgrade_cdr"
+        android:layout_width="86dp"
+        android:layout_height="144dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/light_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_icon_cdr"
+            android:layout_width="74dp"
+            android:layout_height="117dp"
+            android:layout_marginTop="-15dp"
+            android:layout_marginEnd="9dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/cdr_upgrade_icon" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btn_buy_cdr"
+            android:layout_width="66dp"
+            android:layout_height="44dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/buy_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/txt_price_cdr"
+                android:layout_width="32dp"
+                android:layout_height="31dp"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/alata_regular"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:text="@string/labelcdrprice"
+                android:textColor="#228300"
+                app:autoSizeMaxTextSize="14sp"
+                app:autoSizeMinTextSize="10sp"
+                app:autoSizeStepGranularity="1sp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/img_diamond_cdr"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txt_price_cdr"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/diamond" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/cdrUpgradeCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="@font/alata_regular"
+            android:includeFontPadding="false"
+            android:text="@string/labelcdrupcount"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_buy_cdr"
+            app:layout_constraintEnd_toEndOf="@+id/btn_buy_cdr"
+            app:layout_constraintStart_toStartOf="@+id/btn_buy_cdr" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/panel_upgrade_spd"
+        android:layout_width="86dp"
+        android:layout_height="144dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/light_container"
+        app:layout_constraintEnd_toStartOf="@+id/panel_upgrade_cdr"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_icon_spd"
+            android:layout_width="74dp"
+            android:layout_height="117dp"
+            android:layout_marginTop="-15dp"
+            android:layout_marginEnd="9dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/spd_upgrade_icon" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btn_buy_spd"
+            android:layout_width="66dp"
+            android:layout_height="44dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/buy_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/txt_price_spd"
+                android:layout_width="32dp"
+                android:layout_height="31dp"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/alata_regular"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:text="@string/labelspdprice"
+                android:textColor="#228300"
+                app:autoSizeMaxTextSize="14sp"
+                app:autoSizeMinTextSize="10sp"
+                app:autoSizeStepGranularity="1sp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/img_diamond_spd"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txt_price_spd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/diamond" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/spdUpgradeCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="@font/alata_regular"
+            android:includeFontPadding="false"
+            android:text="@string/labelspdupcount"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_buy_spd"
+            app:layout_constraintEnd_toEndOf="@+id/btn_buy_spd"
+            app:layout_constraintStart_toStartOf="@+id/btn_buy_spd" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/panel_upgrade_dmg"
+        android:layout_width="86dp"
+        android:layout_height="144dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/light_container"
+        app:layout_constraintBottom_toBottomOf="@+id/panel_upgrade_spd"
+        app:layout_constraintEnd_toStartOf="@+id/panel_upgrade_spd"
+        app:layout_constraintTop_toTopOf="@+id/panel_upgrade_spd">
+
+        <ImageView
+            android:id="@+id/img_icon_dmg"
+            android:layout_width="63dp"
+            android:layout_height="107dp"
+            android:layout_marginTop="-10dp"
+            android:layout_marginEnd="7dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/dmg_upgrade_icon" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btn_buy_dmg"
+            android:layout_width="66dp"
+            android:layout_height="44dp"
+
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/buy_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/txt_price_dmg"
+                android:layout_width="32dp"
+                android:layout_height="31dp"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/alata_regular"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:text="@string/labeldmgprice"
+                android:textColor="#228300"
+                app:autoSizeMaxTextSize="14sp"
+                app:autoSizeMinTextSize="10sp"
+                app:autoSizeStepGranularity="1sp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/img_diamond_dmg"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txt_price_dmg"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/diamond" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/dmgUpgradeCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="@font/alata_regular"
+            android:includeFontPadding="false"
+            android:text="@string/labeldmgupcount"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_buy_dmg"
+            app:layout_constraintEnd_toEndOf="@+id/btn_buy_dmg"
+            app:layout_constraintStart_toStartOf="@+id/btn_buy_dmg" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/upgrades_label"
+        android:layout_width="88dp"
+        android:layout_height="26dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/alata_regular"
+        android:gravity="center"
+        android:includeFontPadding="false"
+
+        android:rotation="-90"
+        android:text="@string/labelupgrade"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/panel_upgrade_extra"
+        app:layout_constraintEnd_toEndOf="@+id/panel_upgrade_extra"
+        app:layout_constraintStart_toStartOf="@+id/panel_upgrade_extra"
+        app:layout_constraintTop_toTopOf="@+id/panel_upgrade_extra" />
+</androidx.constraintlayout.widget.ConstraintLayout>

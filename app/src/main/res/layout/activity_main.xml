@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bg1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/IVPlayBtn"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.63"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/play_ripple_effect"
+            app:srcCompat="@drawable/play_button" />
+
+        <ImageView
+            android:id="@+id/IVHelpBtn"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/IVPlayBtn"
+            app:layout_constraintEnd_toStartOf="@+id/IVPlayBtn"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/help_ripple_effect"
+            app:srcCompat="@drawable/help_button" />
+
+        <ImageView
+            android:id="@+id/IVSettingsBtn"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginBottom="32dp"
+            app:layout_constraintBottom_toBottomOf="@+id/IVPlayBtn"
+            app:layout_constraintStart_toEndOf="@+id/IVPlayBtn"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/settings_ripple_effect"
+            app:srcCompat="@drawable/settings_button" />
+
+        <ImageView
+            android:id="@+id/IMTitle"
+            android:layout_width="656dp"
+            android:layout_height="103dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/IVPlayBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/title" />
+
+        <ImageView
+            android:id="@+id/creditsButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/credits_button" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
